@@ -138,8 +138,8 @@ export const CartToolTip = () => {
        ) :
        <p>There is nothing in your cart</p>
        }
-       <p>{cart.item_count}</p>
-       <p>Rp{cart.total_price / 100}</p>
+       <p>Total Quantity : {cart.item_count}</p>
+       <p>Total Price : Rp {cart.total_price / 100}</p>
         <div style={styles.increment}>
           <button onClick={clearCart}>Clear Cart</button>
           <a href="/cart"><button>Go to cart</button></a>
