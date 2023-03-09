@@ -26,7 +26,6 @@ const styles = {
 
 export const CartToolTip = () => {
   const [cart, setCart] = useState([])
-  const [item, setItem] = useState([])
   const [variantID, setVariantID] = useState("")
   const [quantity, setQuantity] = useState(0)
 
@@ -105,10 +104,6 @@ export const CartToolTip = () => {
     setQuantity(qty + 1)
     location.reload()
   }
-
-
-  console.log(cart, "ini cart");
-  console.log(item, "ini item");
 
 
   return (
